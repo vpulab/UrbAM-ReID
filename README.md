@@ -1,5 +1,6 @@
 # UrbAM-ReID Dataset
-![UrbAM-ReID Dataset](./SamevsDifferentID.pdf)
+
+
 UrbAM-ReID is a long-term geo-positioned urban ReID dataset. It is composed by four subdatasets recording the same trajectory at the UAM Campus, each one recorded in different seasons and including an inverse direction recording.  This work specifically addresses urban objects re-identification, currently, waste containers, rubbish bins, and crosswalks. The dataset provides different attributes of the annotated objects, like their classes, their foreground or background status and the geo-position. Several evaluation configurations can be defined to simulate realistic scenarios that may arise in actual situations within the management of urban elements, considering the utilization of just visual data, or incorporating additional attributes, providing different complexity levels. Finally, the dataset is used for defining a benchmark where two open source state-of-the-art systems are evaluated.  
 
 ## Code
@@ -57,3 +58,8 @@ Each data scenario includes the following files with annotations:
 
 - `train_label.xml`, `test_label.xml`, `query_label.xml`: Includes cameraID (each ID=1 is May sequence, ID=2 is March, ID=3 is July, and ID=4 is July inverse), image name related to this split, and object ID.
 - `train_label_all.xml`, `test_label_all.xml`, `query_label_all.xml`: Includes the same cameraID; in this case, the imageName is the frame of the original sequence (the same as "frame" in GPS .csv, and in XXXXXX in image output, and the same as in `ReIDSequences/../annotations.xml` attribute image name). The rename is the image name in this folder (in the case of the `FG` folder, it also appears as `rename2` due to it is related to the baseline folder).
+
+
+<p align="center">
+  <img src=./mapa.png width=50% height=50%>
+
