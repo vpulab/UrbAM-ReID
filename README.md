@@ -6,7 +6,7 @@ UrbAM-ReID is a long-term geo-positioned urban ReID dataset. It is composed by f
 ## link of UrbAM-ReID dataset
  [Link to the dataset](https://drive.google.com/drive/folders/1yvZY_EKlkSvUy-By5KvSUB5nUxXamM1D?usp=sharing)
 ## Supplementary material
- It is available in [Suplemetary_material.pdf](./Suplemetary_material.pdf)
+ It is available in [Suplemetary_material.pdf](./Supplemetary_material.pdf)
 ## Code
 
 This porposal utilizes two open-source state-of-the-art works:
