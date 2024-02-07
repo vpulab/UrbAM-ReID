@@ -1,4 +1,5 @@
 # UrbAM-ReID Dataset
+![UrbAM-ReID Dataset](./SamevsDifferentID.pdf)
 UrbAM-ReID is a long-term geo-positioned urban ReID dataset. It is composed by four subdatasets recording the same trajectory at the UAM Campus, each one recorded in different seasons and including an inverse direction recording.  This work specifically addresses urban objects re-identification, currently, waste containers, rubbish bins, and crosswalks. The dataset provides different attributes of the annotated objects, like their classes, their foreground or background status and the geo-position. Several evaluation configurations can be defined to simulate realistic scenarios that may arise in actual situations within the management of urban elements, considering the utilization of just visual data, or incorporating additional attributes, providing different complexity levels. Finally, the dataset is used for defining a benchmark where two open source state-of-the-art systems are evaluated.  
 
 ## Code
