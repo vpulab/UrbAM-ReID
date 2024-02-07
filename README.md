@@ -66,4 +66,7 @@ Each data scenario includes the following files with annotations:
 
 <p align="center">
   <img src=./mapa.png width=50% height=50%>
+ 
+## Acknowledgment
 
+This work has been supported by the Ministerio de Ciencia, Innovación y Universidades of the Spanish Government under project SEGA-CV (TED2021-131643A-I00)
