@@ -69,4 +69,4 @@ Each data scenario includes the following files with annotations:
  
 ## Acknowledgment
 
-This work has been supported by the Ministerio de Ciencia, Innovación y Universidades of the Spanish Government under project SEGA-CV (TED2021-131643A-I00)
+This work has been supported by the Ministerio de Ciencia, Innovación y Universidades of the Spanish Government under projects SEGA-CV (TED2021-131643A-I00) and HVD (PID2021-125051OB-I00).
