@@ -13,7 +13,7 @@ This porposal utilizes two open-source state-of-the-art works:
 
 1. [Part-Aware Transformer](https://github.com/liyuke65535/Part-Aware-Transformer)
 2. [ReID Strong Baseline](https://github.com/michuanhaohao/reid-strong-baseline)
-
+Enivronments are the described in previous links. We have indicate in environmentBOT.yml and environmentPAT.yml the environments for a TITANRTX with CUDA version 11.0, using Python versions 3.8.18 and 3.10.0, respectively.
 ### Modified Codes
 The folder includes modified codes to integrate the UrbAM-ReID dataset into each system. In case of BoT code, indicate the data root in configs/softmax_triplet_XXX.yml in DATASETS.ROOT_DIR.
 
