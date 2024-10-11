@@ -17,25 +17,24 @@ This porposal utilizes two open-source state-of-the-art works:
 ### Modified Codes
 The folder includes modified codes to integrate the UrbAM-ReID dataset into each system.
 
-### Evaluation
-To evaluate the system, follow the instructions in each GitHub repository. After training, use the `update.py` (or `update_GPS.py` for GPS post-processing) script to infer the data. Evaluate the obtained `track.txt` results using `Evaluate_UrbAM-ReID.py`.
+### Evaluation and train per each split
+To evaluate the system, follow the instructions in each GitHub repository. After training, use the `update.py` (or `update_GPS.py` for GPS post-processing) script to infer the data. The results are saved in the output file track.txt. Evaluate the obtained `track.txt` results using `Evaluate_UrbAM-ReID.py`.
 
 #### Example of BOT `update.py`
 ```bash
-python update.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1.yml --track=./checkpoints/crosswalk/crosswalk13new/track2_model1UAM_tradicional.txt MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('UAM_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('./checkpoints/crosswalk/crosswalk13new/resnet50_model_100.pth')"
+python update.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1.yml --track=./your path to save checkpoints and logs for each split/track.txt MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('UAM_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('./your path to save checkpoints and logs for each split/resnet50_model_100.pth')"
 ```
 #### Example of BOT `update_GPS.py`
 ```bash
-python update_GPS.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1.yml --track=./checkpoints/crosswalk/crosswalk13new/track2_model1UAM_tradicionalGPS.txt --xml_dir_gallery=test_label_all.xml --xml_dir_query=query_label_all.xml MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('UAM_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('./checkpoints/crosswalk/crosswalk13new/resnet50_model_100.pth')"
+python update_GPS.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1.yml --track=./your path to save checkpoints and logs for each split/track.txt --xml_dir_gallery=test_label_all.xml --xml_dir_query=query_label_all.xml MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('UAM_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('./your path to save checkpoints and logs for each split/resnet50_model_100.pth')"
 ```
 #### Example of PAT `update.py`
 ```bash
-python update.py --config_file "config/UAM_cross1_test.yml" --track ./logs/UAM/UAM_cross1/track2_model1UAM_tradicional
-
+python update.py --config_file "config/UAM_cross1_test.yml" --track ./logs/UAM/UAM_cross1/track
 ```
 #### Example of PAT `update_GPS.py`
 ```bash
-python  update_GPS.py --config_file "config/SoA/UAM_cross1_test.yml" --track ./logs/UAM/UAM_cross1/track2_model1UAM_tradicionalGPS --xml_dir_gallery test_label_all.xml --xml_dir_query query_label_all.xml
+python  update_GPS.py --config_file "config/SoA/UAM_cross1_test.yml" --track ./logs/UAM/UAM_cross1/trackGPS --xml_dir_gallery test_label_all.xml --xml_dir_query query_label_all.xml
 ```
 ## GPS Annotations
 
