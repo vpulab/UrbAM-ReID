@@ -15,7 +15,7 @@ This porposal utilizes two open-source state-of-the-art works:
 2. [ReID Strong Baseline](https://github.com/michuanhaohao/reid-strong-baseline)
 
 ### Modified Codes
-The folder includes modified codes to integrate the UrbAM-ReID dataset into each system. In case of BoT code, indicate the data root in configs/softmax_triplet_XXX.yml in DATASETS.ROOT_DIR
+The folder includes modified codes to integrate the UrbAM-ReID dataset into each system. In case of BoT code, indicate the data root in configs/softmax_triplet_XXX.yml in DATASETS.ROOT_DIR.
 
 ### Evaluation and train per each split
 To evaluate the system, follow the instructions in each GitHub repository. After training, use the `update.py` (or `update_GPS.py` for GPS post-processing) script to infer the data. The results are saved in the output file track.txt. Evaluate the obtained `track.txt` results using `Evaluate_UrbAM-ReID.py`.
