@@ -33,11 +33,15 @@ python update_GPS.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1
 ```
 #### Example of PAT `update.py`
 ```bash
-python update.py --config_file "config/UAM_cross1_test.yml" --track ./logs/UAM/UAM_cross1/track
+python update.py --config_file "config/UAM_cross1_test.yml" --track ./your path to save checkpoints and logs for each split/track
 ```
 #### Example of PAT `update_GPS.py`
 ```bash
-python  update_GPS.py --config_file "config/SoA/UAM_cross1_test.yml" --track ./logs/UAM/UAM_cross1/trackGPS --xml_dir_gallery test_label_all.xml --xml_dir_query query_label_all.xml
+python  update_GPS.py --config_file "config/SoA/UAM_cross1_test.yml" --track ./your path to save checkpoints and logs for each split/trackGPS --xml_dir_gallery test_label_all.xml --xml_dir_query query_label_all.xml
+```
+#### Evaluate BOT and PAT `Evaluate_UrbAM-ReID.py`
+```bash
+python  Evaluate_UrbAM-ReID.py --track ./your path to save checkpoints and logs for each split/track.txt --path ./your path to the dataset
 ```
 ## GPS Annotations
 
