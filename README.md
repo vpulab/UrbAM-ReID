@@ -18,7 +18,9 @@ Enivronments are the described in previous links. We have indicate in environmen
 The folder includes modified codes to integrate the UrbAM-ReID dataset into each system. In case of BoT code, indicate the data root in configs/softmax_triplet_XXX.yml in DATASETS.ROOT_DIR.
 
 ### Evaluation and train per each split
-To evaluate the system, follow the instructions in each GitHub repository. After training, use the `update.py` (or `update_GPS.py` for GPS post-processing) script to infer the data. The results are saved in the output file track.txt. Evaluate the obtained `track.txt` results using `Evaluate_UrbAM-ReID.py`.
+To evaluate the system, follow the instructions in each GitHub repository.
+In case of BOT code, indicate the data path in softmax_triplet_UAM.yml softmax_triplet_UAM_test.yml in DATASETS.ROOT_DIR
+ After training, use the `update.py` (or `update_GPS.py` for GPS post-processing) script to infer the data. The results are saved in the output file track.txt. Evaluate the obtained `track.txt` results using `Evaluate_UrbAM-ReID.py`.
 
 #### Example of BOT `update.py`
 ```bash
