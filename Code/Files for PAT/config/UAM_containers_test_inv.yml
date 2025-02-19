@@ -26,7 +26,7 @@ DATASETS:
   TRAIN: ('UAM',)
   TEST: ('UAM_test',)
   #ROOT_DIR: ('../../data') # root of datasets
-  ROOT_DIR: './ReID/rubishbinss/rubishbins/inv'
+  ROOT_DIR:'local rute to dataset...../ICIP_UrbAM-ReID/splits/Containers/containers/inv'
 
 DATALOADER:
   SAMPLER: 'softmax_triplet'
@@ -52,7 +52,7 @@ TEST:
   EVAL: True
   IMS_PER_BATCH: 128
   RE_RANKING: False
-  WEIGHT: "./logs/UAM/UAM_bin1/part_attention_vit_60.pth" 
+  WEIGHT: "./logs/UAM/UAM_containers/part_attention_vit_60.pth" 
   NECK_FEAT: 'before'
   FEAT_NORM: True
 
