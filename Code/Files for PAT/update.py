@@ -87,8 +87,8 @@ if __name__ == "__main__":
     # save feature
     qf=qf.cpu().numpy()
     gf=gf.cpu().numpy()
-    np.save("./Part-Aware-Transformer/qf.npy", qf)
-    np.save("./Part-Aware-Transformer/gf.npy", gf)
+    np.save("./qf.npy", qf)
+    np.save("./gf.npy", gf)
 
     #inference(cfg, model, val_loader, num_query)
     q_g_dist = np.dot(qf, np.transpose(gf))
