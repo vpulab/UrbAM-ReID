@@ -26,7 +26,7 @@ DATASETS:
   TRAIN: ('UAM',)
   TEST: ('UAM_test',)
   #ROOT_DIR: ('../../data') # root of datasets
-  ROOT_DIR: './ReID/rubishbinss/rubishbins/'
+  ROOT_DIR: 'local rute to dataset...../ICIP_UrbAM-ReID/splits/Containers/containers/'
 
 DATALOADER:
   SAMPLER: 'softmax_triplet'
