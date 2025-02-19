@@ -1,4 +1,4 @@
-name: /mnt/rhome/pme/entorno_pat_paula
+name: conda_PatREID
 channels:
   - defaults
 dependencies:
@@ -94,5 +94,5 @@ dependencies:
     - werkzeug==3.0.2
     - wheel==0.41.2
     - yacs==0.1.8
-prefix: /mnt/rhome/pme/entorno_pat_paula
+prefix:
 
