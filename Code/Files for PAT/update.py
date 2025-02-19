@@ -8,7 +8,7 @@ from processor.ori_vit_processor_with_amp import do_inference as do_inf
 from utils.logger import setup_logger
 
 import numpy as np
-from re_ranking import re_ranking
+from utils.re_ranking import re_ranking
 import torch
 from torch.backends import cudnn
 def extract_feature(model, dataloaders, num_query):
