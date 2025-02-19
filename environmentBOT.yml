@@ -1,4 +1,4 @@
-name: /mnt/rhome/pme/conda_BotREID
+name: conda_BotREID
 channels:
   - pytorch
   - defaults
@@ -54,5 +54,5 @@ dependencies:
     - pytorch-ignite==0.1.2
     - pyyaml==6.0.1
     - yacs==0.1.8
-prefix: /mnt/rhome/pme/conda_BotREID
+prefix: 
 
