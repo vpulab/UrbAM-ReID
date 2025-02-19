@@ -15,7 +15,7 @@ INPUT:
   
 DATASETS:
   NAMES: ('UAM_test')
-  ROOT_DIR: 'pathToYourSplit'
+  ROOT_DIR: 'local rute to dataset...../ICIP_UrbAM-ReID/splits/Containers/containers/'
 DATALOADER:
   SAMPLER: 'softmax_triplet'
   NUM_INSTANCE: 4
