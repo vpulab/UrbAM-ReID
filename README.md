@@ -16,6 +16,8 @@ This porposal utilizes two open-source state-of-the-art works:
 Enivronments are the described in previous links. We have indicate in environmentBOT.yml and environmentPAT.yml the environments for a TITANRTX with CUDA version 11.0, using Python versions 3.8.18 and 3.10.0, respectively.
 ### Modified Codes
 The folder includes modified codes to integrate the UrbAM-ReID dataset into each system. In case of BoT code, indicate the data root in configs/softmax_triplet_XXX.yml in DATASETS.ROOT_DIR.
+### Download BOT resnet50 model
+resnet50: https://download.pytorch.org/models/resnet50-19c8e357.pth
 
 ### Evaluation and train per each split
 To evaluate the system, follow the instructions in each GitHub repository.
