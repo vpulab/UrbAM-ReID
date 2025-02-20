@@ -30,11 +30,11 @@ python tools/train.py --config_file="configs/softmax_triplet_UAM.yml" MODEL.DEVI
 ```
 #### Example of BOT `update.py`
 ```bash
-python tools/update.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1.yml --track="local rute to store BOT results...../Results/track.txt" MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('uam_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('local rute to store BOT results...../Results/resnet50_model_100.pth')"
+python tools/update.py --config_file=./configs/SOA/softmax_triplet_UAM_test.yml --track="local rute to store BOT results...../Results/track.txt" MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('UAM_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('local rute to store BOT results...../Results/resnet50_model_100.pth')"
 ```
 #### Example of BOT `update_GPS.py`
 ```bash
-python tools/update_GPS.py --config_file=./configs/SOA/softmax_triplet_UAM_test_cross1.yml --track=./your path to save checkpoints and logs for each split/track.txt --xml_dir_gallery=test_label_all.xml --xml_dir_query=query_label_all.xml MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('uam_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('./your path to save checkpoints and logs for each split/resnet50_model_100.pth')"
+python tools/update_GPS.py --config_file=./configs/SOA/softmax_triplet_UAM_test.yml --track=./your path to save checkpoints and logs for each split/track.txt --xml_dir_gallery=test_label_all.xml --xml_dir_query=query_label_all.xml MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('UAM_test')" TEST.NECK_FEAT "('after')" TEST.FEAT_NORM "('yes')" MODEL.PRETRAIN_CHOICE "('self')" TEST.RE_RANKING "('yes')" TEST.WEIGHT "('./your path to save checkpoints and logs for each split/resnet50_model_100.pth')"
 ```
 #### Evaluate BOT `Evaluate_UrbAM-ReID.py`
 ```bash
