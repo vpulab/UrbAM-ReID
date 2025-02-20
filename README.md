@@ -50,7 +50,7 @@ python update.py --config_file "config/UAM_containers_test.yml" --track="local r
 ```
 #### Example of PAT `update_GPS.py`
 ```bash
-python  update_GPS.py --config_file "config/SoA/UAM_cross1_test.yml" --track ./your path to save checkpoints and logs for each split/trackGPS --xml_dir_gallery test_label_all.xml --xml_dir_query query_label_all.xml
+python  update_GPS.py --config_file "config/SoA/UAM_containers_test.yml" --track ./your path to save checkpoints and logs for each split/trackGPS --xml_dir_gallery test_label_all.xml --xml_dir_query query_label_all.xml
 ```
 #### Evaluate PAT `Evaluate_UrbAM-ReID.py`
 ```bash
