@@ -84,7 +84,7 @@ Each data scenario includes the following files with annotations:
 
 
 <p align="center">
-  <img src=./mapa.png width=50% height=50%>
+  <img src=./map.png width=50% height=50%>
  
 ## Acknowledgment
 
