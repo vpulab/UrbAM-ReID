@@ -89,3 +89,18 @@ Each data scenario includes the following files with annotations:
 ## Acknowledgment
 
 This work has been supported by the Ministerio de Ciencia, Innovación y Universidades of the Spanish Government under projects SEGA-CV (TED2021-131643A-I00) and HVD (PID2021-125051OB-I00).
+
+## Citation
+To cite this work, please use the following reference.
+```bash
+@INPROCEEDINGS{10647759,
+  author={Moral, Paula and García-Martín, Álvaro and Martínez, José M.},
+  booktitle={2024 IEEE International Conference on Image Processing (ICIP)}, 
+  title={Long-Term Geo-Positioned Re-Identification Dataset of Urban Elements}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={124-130},
+  keywords={Waste management;Visualization;Image processing;Vegetation mapping;Benchmark testing;Complexity theory;Trajectory;Recording;Maintenance;Monitoring;Re-Identification;Deep Learning;Computer Vision;Urban Environment},
+  doi={10.1109/ICIP51287.2024.10647759}}
+```
